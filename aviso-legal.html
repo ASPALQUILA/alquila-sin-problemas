@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso Legal | Alquila Sin Problemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .legal-body { background: var(--gray-light); }
+    .legal-content { max-width: 860px; margin: 0 auto; padding: 60px 5%; }
+    .legal-content h1 { font-size: 2rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 36px; }
+    .legal-content h2 { font-size: 1.1rem; font-weight: 800; color: var(--teal-dark); margin: 28px 0 10px; }
+    .legal-content p { font-size: 0.95rem; color: var(--text); line-height: 1.8; margin-bottom: 12px; }
+    .legal-content ul { padding-left: 20px; margin-bottom: 12px; }
+    .legal-content ul li { font-size: 0.95rem; color: var(--text); line-height: 1.8; margin-bottom: 4px; }
+    .legal-content a { color: var(--teal); }
+  </style>
+</head>
+<body class="legal-body">
+<nav class="navbar">
+  <a href="index.html"><img src="images/logo.png" alt="Alquila Sin Problemas"></a>
+  <a href="index.html#formulario" class="btn-nav">Estudio gratuito</a>
+</nav>
+
+<div class="legal-content">
+  <h1>Aviso legal</h1>
+
+  <h2>1. Objeto del sitio</h2>
+  <p>El propósito de este sitio web es informar sobre los servicios de gestión de viviendas en alquiler ofrecidos bajo la marca <strong>Alquila Sin Problemas</strong>, así como facilitar el contacto con propietarios interesados.</p>
+  <p>El acceso y uso del sitio implican la aceptación plena del presente Aviso Legal, la Política de Privacidad y la Política de Cookies.</p>
+
+  <h2>2. Propiedad intelectual</h2>
+  <p>Todo el contenido de este sitio web (textos, imágenes, gráficos, logotipos, diseño, estructura y demás elementos) es titularidad de Raquel García Brea o cuenta con los derechos necesarios para su uso, y está protegido por la normativa vigente en materia de propiedad intelectual e industrial.</p>
+  <p>No se autoriza su reproducción, distribución o modificación sin autorización previa por escrito.</p>
+
+  <h2>3. Responsabilidad del usuario</h2>
+  <p>El usuario se compromete a utilizar el sitio web de manera lícita, ética y responsable.</p>
+  <p>Queda prohibido el uso del contenido con fines ilícitos o que puedan dañar la imagen, derechos o intereses de la titular o de terceros.</p>
+
+  <h2>4. Enlaces externos</h2>
+  <p>Este sitio web puede incluir enlaces a páginas de terceros. No se asume responsabilidad alguna por los contenidos, políticas o prácticas de dichos sitios externos.</p>
+
+  <h2>5. Limitación de responsabilidad</h2>
+  <p>La información contenida en este sitio tiene carácter informativo.</p>
+  <p>La formalización de cualquier servicio se realizará mediante acuerdo específico entre las partes.</p>
+  <p>No se garantiza la ausencia de errores técnicos o interrupciones del servicio, aunque se adoptan las medidas razonables para evitarlos.</p>
+
+  <h2>6. Testimonios, reseñas y material audiovisual</h2>
+  <p>Los usuarios que envíen voluntariamente testimonios, reseñas o material audiovisual autorizan su posible publicación en el sitio web o canales de comunicación relacionados con la marca.</p>
+
+  <h2>7. Titular del sitio y contacto</h2>
+  <p>Este sitio web es titularidad de Raquel García Brea con DNI 22582215X en España. Para cualquier consulta relacionada con el presente sitio web, puedes contactar a través del correo electrónico: <a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
+</div>
+
+<footer>
+  <p><a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
+  <div class="footer-links">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="politica-privacidad.html">Política de privacidad</a>
+    <a href="politica-cookies.html">Política de cookies</a>
+  </div>
+  <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

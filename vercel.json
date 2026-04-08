@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/gracias", "destination": "/gracias.html" },
+    { "source": "/aviso-legal", "destination": "/aviso-legal.html" },
+    { "source": "/politica-privacidad", "destination": "/politica-privacidad.html" },
+    { "source": "/politica-cookies", "destination": "/politica-cookies.html" },
+    { "source": "/solicitar-estudio-gratuito", "destination": "/solicitar-estudio-gratuito.html" }
+  ]
+}

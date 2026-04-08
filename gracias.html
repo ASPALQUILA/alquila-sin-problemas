@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Solicitud recibida! | Alquila Sin Problemas</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1DLY5JELX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1DLY5JELX');</script>
+
+  <!-- Meta Pixel - Conversion -->
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','867315569693475');fbq('track','PageView');fbq('track','CompleteRegistration');</script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=867315569693475&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: var(--gray-light); min-height: 100vh; display: flex; flex-direction: column; }
+    .thanks-wrap { flex: 1; display: flex; align-items: center; justify-content: center; padding: 60px 5%; }
+    .thanks-card {
+      background: white; border-radius: var(--radius); box-shadow: var(--shadow-lg);
+      padding: 56px 48px; max-width: 560px; width: 100%; text-align: center;
+    }
+    .thanks-icon { font-size: 3.5rem; margin-bottom: 20px; }
+    .thanks-card h1 { font-size: 2.2rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 16px; }
+    .thanks-card p { font-size: 1rem; color: var(--text-light); line-height: 1.7; margin-bottom: 32px; }
+    .thanks-card p strong { color: var(--teal-dark); font-weight: 800; }
+    @media (max-width: 600px) {
+      .thanks-card { padding: 36px 24px; }
+      .thanks-card h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html"><img src="images/logo.png" alt="Alquila Sin Problemas"></a>
+</nav>
+
+<div class="thanks-wrap">
+  <div class="thanks-card">
+    <div class="thanks-icon">✅</div>
+    <h1>¡Solicitud recibida!</h1>
+    <p>Gracias por confiar en nosotros.<br>Vamos a revisar tu información y nos pondremos en contacto contigo <strong>lo antes posible.</strong></p>
+    <a href="index.html" class="btn-primary">Ir a la web</a>
+  </div>
+</div>
+
+<footer>
+  <p><a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
+  <div class="footer-links">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="politica-privacidad.html">Política de privacidad</a>
+    <a href="politica-cookies.html">Política de cookies</a>
+  </div>
+  <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

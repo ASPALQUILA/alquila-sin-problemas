@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquila Sin Problemas | Cobra cada mes sin impagos, riesgos ni gestión</title>
+  <meta name="description" content="Nos convertimos en tu único inquilino. Tú cobras una renta fija cada mes en Palma de Mallorca y alrededores, nosotros nos encargamos de todo.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1DLY5JELX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D1DLY5JELX');</script>
+
+  <!-- Meta Pixel -->
+  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','867315569693475');fbq('track','PageView');</script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=867315569693475&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Brevo form styles -->
+  <style>
+    @font-face{font-display:block;font-family:Roboto;src:url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"),url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")}
+    @font-face{font-display:fallback;font-family:Roboto;font-weight:600;src:url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"),url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")}
+    @font-face{font-display:fallback;font-family:Roboto;font-weight:700;src:url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"),url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")}
+    #sib-container input:-ms-input-placeholder{text-align:left;font-family:Helvetica,sans-serif;color:#8a8c8e}
+    #sib-container input::placeholder{text-align:left;font-family:Helvetica,sans-serif;color:#8a8c8e}
+    #sib-container a{text-decoration:underline;color:#225053}
+    .sib-form{text-align:center;background-color:transparent}
+    #sib-container{text-align:center;background-color:rgba(255,255,255,1);max-width:540px;border-radius:25px;border-width:2px;border-color:#225053;border-style:solid;margin:0 auto}
+  </style>
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <style>
+    /* HERO */
+    .hero {
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 520px; background: #f7fafa; overflow: hidden;
+    }
+    .hero-content {
+      padding: 60px 5% 60px 8%; display: flex; flex-direction: column;
+      justify-content: center; gap: 20px;
+    }
+    .hero h1 { font-size: 2.6rem; font-weight: 900; color: var(--teal-dark); line-height: 1.15; }
+    .hero h1 span { color: var(--teal); display: block; }
+    .hero-sub { font-size: 1.1rem; color: var(--text); }
+    .hero-sub strong { font-weight: 800; }
+    .hero-note { font-size: 0.82rem; color: var(--text-light); font-style: italic; }
+    .hero-img { position: relative; overflow: hidden; }
+    .hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
+    /* STATS BAR */
+    .stats-bar {
+      background: var(--teal-dark); color: white;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+    }
+    .stat-item {
+      padding: 30px 20px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-size: 2.4rem; font-weight: 900; color: var(--teal); line-height: 1; }
+    .stat-label { font-size: 0.95rem; font-weight: 700; margin: 4px 0 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-desc { font-size: 0.82rem; opacity: 0.8; }
+
+    /* COMPARISON */
+    .comparison-section { background: var(--white); }
+    .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .comp-card {
+      border-radius: var(--radius); padding: 30px; border: 2px solid;
+    }
+    .comp-card.bad { border-color: #fca5a5; background: #fff5f5; }
+    .comp-card.good { border-color: var(--teal); background: var(--teal-light); }
+    .comp-title {
+      font-size: 1.2rem; font-weight: 800; margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .comp-card.bad .comp-title { color: var(--red); }
+    .comp-card.good .comp-title { color: var(--teal-dark); }
+    .comp-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .comp-list li { font-size: 0.95rem; display: flex; align-items: flex-start; gap: 8px; }
+    .comp-list li::before { font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .comp-card.bad .comp-list li::before { content: "✗"; color: var(--red); font-weight: 800; }
+    .comp-card.good .comp-list li::before { content: "✓"; color: var(--teal); font-weight: 800; }
+    .comp-footer {
+      margin-top: 20px; padding: 14px 18px; border-radius: 8px;
+      font-size: 0.9rem; font-weight: 700; text-align: center;
+    }
+    .comp-card.bad .comp-footer { background: var(--red); color: white; }
+    .comp-card.good .comp-footer { background: var(--teal-dark); color: white; }
+
+    /* BEFORE/AFTER */
+    .before-after-section { background: var(--gray-light); }
+    .ba-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .ba-pair { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .ba-photos { display: grid; grid-template-columns: 1fr 1fr; }
+    .ba-photo { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+    .ba-photo img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .ba-photo img.after { filter: saturate(1.4) contrast(1.1) brightness(1.05); }
+    .ba-photo:hover img { transform: scale(1.03); }
+    .ba-label {
+      position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,0.65); color: white; font-size: 0.72rem;
+      font-weight: 800; padding: 3px 10px; border-radius: 20px; letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .ba-room { background: white; padding: 12px 16px; font-weight: 700; font-size: 0.9rem; color: var(--teal-dark); text-align: center; }
+
+    /* STEPS */
+    .steps-section { background: var(--white); }
+    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .step-card {
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow); overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .step-img { height: 180px; overflow: hidden; position: relative; }
+    .step-img img { width: 100%; height: 100%; object-fit: cover; }
+    .step-num {
+      position: absolute; bottom: 12px; left: 12px;
+      background: var(--teal); color: white; width: 36px; height: 36px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1rem;
+    }
+    .step-body { padding: 20px; }
+    .step-body h3 { font-size: 1.1rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 8px; }
+    .step-body p { font-size: 0.9rem; color: var(--text-light); }
+
+    /* TESTIMONIALS */
+    .testimonials-section { background: var(--teal-dark); }
+    .testimonials-section .section-title { color: white; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .testimonial-card {
+      background: white; border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow-lg);
+    }
+    .testimonial-card img { width: 100%; height: auto; display: block; }
+
+    /* FORM SECTION */
+    .form-section { background: var(--gray-light); }
+    .form-wrapper {
+      background: white; border-radius: var(--radius); padding: 40px;
+      box-shadow: var(--shadow-lg); max-width: 580px; margin: 0 auto;
+    }
+    .form-title { font-size: 1.6rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 8px; text-align: center; }
+    .form-sub { font-size: 0.95rem; color: var(--text-light); text-align: center; margin-bottom: 28px; }
+    .form-sub em { font-style: normal; font-weight: 700; color: var(--teal-dark); }
+
+    /* FORM FIELDS (Brevo will override with its own styles) */
+    .sib-form-block { margin-bottom: 16px; }
+
+    /* FAQ */
+    .faq-section { background: white; }
+    .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+    .faq-item { border-bottom: 1px solid #e5e5e5; }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 0; cursor: pointer; font-weight: 700; font-size: 1rem;
+      color: var(--teal-dark); gap: 12px; user-select: none;
+    }
+    .faq-q::after { content: "▶"; font-size: 0.7rem; color: var(--teal); transition: transform 0.2s; flex-shrink: 0; }
+    .faq-item.open .faq-q::after { transform: rotate(90deg); }
+    .faq-a { display: none; padding: 0 0 20px; font-size: 0.95rem; color: var(--text); line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-a strong { font-weight: 800; }
+
+    /* FINAL CTA */
+    .final-cta { background: var(--gray-light); overflow: hidden; }
+    .final-cta-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; gap: 40px;
+    }
+    .final-cta-text h2 { font-size: 2rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 12px; }
+    .final-cta-text h2 span { color: var(--teal); }
+    .final-cta-text p { color: var(--text-light); margin-bottom: 24px; font-size: 1rem; }
+    .final-cta-text .note { font-size: 0.82rem; color: var(--text-light); font-style: italic; margin-top: 12px; }
+    .final-cta-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .final-cta-img img { width: 100%; height: 320px; object-fit: cover; object-position: center top; filter: saturate(1.1); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-img { height: 280px; }
+      .hero-content { padding: 40px 5%; }
+      .hero h1 { font-size: 2rem; }
+      .comparison-grid, .ba-grid, .steps-grid, .testimonials-grid { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: 1fr; }
+      .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+      .stat-item:last-child { border-bottom: none; }
+      .final-cta-inner { grid-template-columns: 1fr; }
+      .final-cta-img { display: none; }
+      .form-wrapper { padding: 28px 20px; }
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <span>Usamos cookies para mejorar tu experiencia y medir el rendimiento de nuestra web. <a href="politica-cookies.html">Más info</a></span>
+  <div class="cookie-btns">
+    <button class="btn-cookie btn-reject" onclick="closeCookies()">Rechazar</button>
+    <button class="btn-cookie btn-accept" onclick="acceptCookies()">Aceptar</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html"><img src="images/logo.png" alt="Alquila Sin Problemas"></a>
+  <a href="#formulario" class="btn-nav">Estudio gratuito</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Cobra cada mes<span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
+    <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</p>
+    <div>
+      <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
+      <p class="hero-note" style="margin-top:10px;">*Solo en <strong>Palma de Mallorca y alrededores</strong> y a partir de <strong>3 habitaciones</strong>.</p>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="images/header-pareja.png" alt="Propietarios tranquilos cobrando su renta fija" loading="eager">
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">0€</div>
+    <div class="stat-label">Coste para ti</div>
+    <div class="stat-desc">Sin gastos, sin comisiones y sin sorpresas</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">Seguro</div>
+    <div class="stat-desc">Método legal diseñado para proteger al propietario</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">+8</div>
+    <div class="stat-label">Años de experiencia</div>
+    <div class="stat-desc">En gestión patrimonial y alquiler seguro</div>
+  </div>
+</div>
+
+<!-- COMPARISON -->
+<section class="section comparison-section">
+  <div class="container">
+    <h2 class="section-title text-center">El problema no es alquilar, es <span>TODO lo que viene después</span></h2>
+    <div class="comparison-grid">
+      <div class="comp-card bad">
+        <div class="comp-title">⚠️ Alquiler tradicional</div>
+        <ul class="comp-list">
+          <li>Riesgo de impagos, procesos largos</li>
+          <li>Meses sin cobrar si queda vacía</li>
+          <li>Limitaciones e inseguridad jurídica</li>
+          <li>Inquilinos que no puedes desalojar</li>
+          <li>Gestión, problemas, riesgos del alquiler</li>
+          <li>Reparaciones y gastos imprevistos</li>
+        </ul>
+        <div class="comp-footer">Cuando algo falla, pierdes dinero, tiempo y paz mental. Y no hay red de seguridad.</div>
+      </div>
+      <div class="comp-card good">
+        <div class="comp-title">✅ Método Alquila Sin Problemas</div>
+        <ul class="comp-list">
+          <li><strong>Renta fija garantizada</strong>, pase lo que pase</li>
+          <li><strong>Sin meses vacíos</strong>, siempre ocupada</li>
+          <li><strong>Sin problemas legales</strong>, asumimos los riesgos</li>
+          <li><strong>Gestión completa</strong>, tú no haces nada</li>
+          <li>Mantenimiento, reparaciones y costes incluidos</li>
+          <li>Inversión inicial sin coste para ti</li>
+        </ul>
+        <div class="comp-footer">SIN gastos, SIN gestión y SIN riesgos para ti. Tú SOLO cobras cada mes, sin excepciones.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE/AFTER -->
+<section class="section before-after-section">
+  <div class="container">
+    <h2 class="section-title text-center">Así <span>preparamos y optimizamos</span> tu vivienda</h2>
+    <p class="section-sub text-center">Invertimos en mejorar tu vivienda desde el inicio: Home Staging profesional, reformas y optimización, <strong>sin que tú pagues nada.</strong></p>
+    <div class="ba-grid">
+      <div class="ba-pair">
+        <div class="ba-photos">
+          <div class="ba-photo">
+            <img src="images/bano-antes.png" alt="Baño antes" loading="lazy">
+            <span class="ba-label">Antes</span>
+          </div>
+          <div class="ba-photo">
+            <img src="images/bano-despues.png" alt="Baño después" class="after" loading="lazy">
+            <span class="ba-label">Después</span>
+          </div>
+        </div>
+        <div class="ba-room">🛁 Baño</div>
+      </div>
+      <div class="ba-pair">
+        <div class="ba-photos">
+          <div class="ba-photo">
+            <img src="images/salon-antes.jpg" alt="Salón antes" loading="lazy">
+            <span class="ba-label">Antes</span>
+          </div>
+          <div class="ba-photo">
+            <img src="images/salon-despues.jpg" alt="Salón después" class="after" loading="lazy">
+            <span class="ba-label">Después</span>
+          </div>
+        </div>
+        <div class="ba-room">🛋️ Salón</div>
+      </div>
+      <div class="ba-pair">
+        <div class="ba-photos">
+          <div class="ba-photo">
+            <img src="images/terraza-antes.jpg" alt="Terraza antes" loading="lazy">
+            <span class="ba-label">Antes</span>
+          </div>
+          <div class="ba-photo">
+            <img src="images/terraza-despues.png" alt="Terraza después" class="after" loading="lazy">
+            <span class="ba-label">Después</span>
+          </div>
+        </div>
+        <div class="ba-room">🌿 Terraza</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="section steps-section">
+  <div class="container">
+    <h2 class="section-title text-center">Así de <span>fácil</span> es cobrar cada mes,<br>sin que tengas que hacer nada</h2>
+    <p class="section-sub text-center">En <strong>solo 3 pasos</strong>, pasas de preocuparte por tu alquiler a <strong>olvidarte de todo.</strong></p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-img">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Valoramos tu vivienda" loading="lazy">
+          <div class="step-num">01</div>
+        </div>
+        <div class="step-body">
+          <h3>Valoramos tu vivienda</h3>
+          <p>Analizamos tu propiedad y te hacemos una oferta de alquiler mensual fija. <strong>Sin compromiso ni letra pequeña.</strong></p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-img">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Invertimos y mejoramos" loading="lazy">
+          <div class="step-num">02</div>
+        </div>
+        <div class="step-body">
+          <h3>Invertimos y mejoramos</h3>
+          <p>Preparamos tu vivienda: Home Staging, mejoras y optimización. <strong>Todo a nuestro cargo.</strong></p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-img">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Tú cobras, nosotros trabajamos" loading="lazy">
+          <div class="step-num">03</div>
+        </div>
+        <div class="step-body">
+          <h3>Tú cobras, nosotros trabajamos</h3>
+          <p>Empiezas a recibir tu renta fija cada mes. <strong>Sin excepciones, sin excusas y pase lo que pase.</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="container">
+    <h2 class="section-title text-center">Lo que dicen <span style="color:#1daaac;">Nuestros Propietarios</span></h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <img src="images/testimonial-enrique.png" alt="Testimonio Enrique Herrero" loading="lazy">
+      </div>
+      <div class="testimonial-card">
+        <img src="images/testimonial-marcos.png" alt="Testimonio Marcos Díaz" loading="lazy">
+      </div>
+      <div class="testimonial-card">
+        <img src="images/testimonial-carmen.png" alt="Testimonio Carmen López" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="section form-section" id="formulario">
+  <div class="container">
+    <div class="form-wrapper">
+      <h2 class="form-title">Solicita tu <em>estudio gratuito</em></h2>
+      <p class="form-sub">Analizamos tu vivienda y te hacemos una propuesta <em>sin compromiso, sin coste, sin obligación.</em></p>
+
+      <!-- FORMULARIO ASP WEB -->
+      <div class="sib-form">
+        <div id="sib-form-container" class="sib-form-container">
+          <div id="sib-container" class="sib-container--large sib-container--vertical">
+            <form id="sib-form" method="POST" action="/api/submit-web">
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="NOMBRE" data-required="*">Tu nombre y apellidos</label><div class="entry__field"><input class="input" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-sms-field sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="SMS" data-required="*">Tu teléfono (WhatsApp)</label><div class="sib-sms-input-wrapper" style="direction:ltr"><div class="sib-sms-input" data-placeholder="" data-required="1" data-country-code="ES" data-whatsapp-country-code="ES" data-value="" data-whatsappvalue="" data-attributename="SMS"><div class="entry__field"><select class="input" name="SMS__COUNTRY_CODE" data-required="true"><option value="+34" selected>+34 ES</option><option value="+1">+1 US</option><option value="+44">+44 GB</option><option value="+33">+33 FR</option><option value="+49">+49 DE</option><option value="+39">+39 IT</option><option value="+351">+351 PT</option></select></div><div class="entry__field" style="width:100%"><input type="tel" class="input" id="SMS" name="SMS" autocomplete="off" placeholder="SMS" data-required="true" required/></div></div><div class="sib-sms-tooltip"><div class="sib-sms-tooltip__box">El campo SMS debe contener entre 6 y 19 cifras e incluir el prefijo del país sin «+» ni «0» delante (ej.: 34xxxxxxxxxxx para España)</div><span class="sib-sms-tooltip__icon">?</span></div></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label><label class="entry__error entry__error--secondary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="EMAIL" data-required="*">Tu email</label><div class="entry__field"><input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="DIRECCION" data-required="*">Dirección completa de la vivienda</label><div class="entry__field"><textarea rows="2" class="input" maxlength="500" id="DIRECCION" name="DIRECCION" autocomplete="off" placeholder="(Calle, nº, piso, código postal, municipio...)" data-required="true" required></textarea></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="M2" data-required="*">M2 útiles (aprox.)</label><div class="entry__field"><input maxlength="200" type="text" data-numeric="true" class="input" id="M2" name="M2" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="HABITACIONES" data-required="*">Nº de habitaciones</label><div class="entry__field"><input maxlength="200" type="text" data-numeric="true" class="input" id="HABITACIONES" name="HABITACIONES" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="BANOS" data-required="*">Nº de baños y/o aseos</label><div class="entry__field"><input maxlength="200" type="text" data-numeric="true" class="input" id="BANOS" name="BANOS" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="COMENTARIOS">Comentarios adicionales (opcional)</label><div class="entry__field"><textarea rows="2" class="input" maxlength="500" id="COMENTARIOS" name="COMENTARIOS" autocomplete="off"></textarea></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
+              <div style="padding:8px 0"><div class="sib-form__declaration" style="direction:ltr"><div style="font-size:14px;text-align:left;font-family:Helvetica,sans-serif;color:#687484;background-color:transparent;padding-left:10px"><p>Al enviar este formulario, aceptas la <a target="_blank" href="politica-privacidad.html">Política de privacidad</a> y el tratamiento de tus datos.</p></div></div></div>
+              <div style="padding:8px 0"><div class="sib-form-block" style="text-align:center"><button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:18px;text-align:center;font-weight:700;font-family:Helvetica,sans-serif;color:#FFFFFF;background-color:#1daaac;border-radius:20px;border-width:0px" form="sib-form" type="submit">Solicitar estudio gratuito</button></div></div>
+              <input type="text" name="email_address_check" value="" class="input--hidden">
+              <input type="hidden" name="locale" value="es">
+              <input type="hidden" name="html_type" value="simple">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+<section class="section faq-section">
+  <div class="container">
+    <h2 class="section-title text-center">Lo que probablemente <span>te estás preguntando...</span></h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">¿Cómo funciona exactamente este método?</div>
+        <div class="faq-a">Primero, <strong>analizamos tu vivienda y fijamos una renta mensual</strong> contigo. Después, firmamos un contrato donde <strong>Alquila Sin Problemas se convierte en tu único inquilino</strong>. A partir de ahí, <strong>nos encargamos de todo</strong>: gestión, mantenimiento, costes y riesgos. <strong>Tu recibes tu renta fija cada mes, sin excepciones.</strong></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cuánto voy a cobrar?</div>
+        <div class="faq-a">La renta depende de las características y ubicación de tu vivienda. Tras analizarla, te proponemos <strong>una renta fija clara antes de firmar.</strong></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Qué pasa si hay impagos, daños o incidencias?</div>
+        <div class="faq-a">El problema no es tuyo, <strong>nosotros asumimos el 100% del riesgo</strong>. Todos los gastos de <strong>mantenimiento, reparaciones y mejora corren de nuestra cuenta</strong>, de hecho, antes de empezar, <strong>invertimos en tu vivienda para mejorarla y revalorizarla.</strong> Tu renta está garantizada <strong>pase lo que pase.</strong></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Puedo recuperar mi vivienda?</div>
+        <div class="faq-a">Sí, las condiciones quedan definidas en el contrato desde el principio, <strong>la propiedad sigue siendo 100% tuya.</strong></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cuánto me va a costar?</div>
+        <div class="faq-a">Nada. <strong>No hay comisiones, ni cuotas.</strong> Nosotros asumimos <strong>toda la gestión, los costes y el riesgo.</strong></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Qué tipo de viviendas aceptáis?</div>
+        <div class="faq-a">Viviendas en <strong>Palma de Mallorca y alrededores</strong>, de <strong>3 o más habitaciones.</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section final-cta">
+  <div class="container">
+    <div class="final-cta-inner">
+      <div class="final-cta-text">
+        <h2>Descubre <span>cuánto puede generar tu vivienda</span> con el Método Alquila Sin Problemas</h2>
+        <p>Solo trabajamos con viviendas en <strong>Palma de Mallorca y alrededores</strong> y a partir de <strong>3 habitaciones.</strong><br>Si tu vivienda encaja en este perfil, podemos estudiar tu caso.</p>
+        <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
+      </div>
+      <div class="final-cta-img">
+        <img src="images/pareja2.png" alt="Propietario tranquilo con renta garantizada" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
+  <div class="footer-links">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <a href="politica-privacidad.html">Política de privacidad</a>
+    <a href="politica-cookies.html">Política de cookies</a>
+  </div>
+  <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script>
+  // Auto year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Cookie banner
+  if (localStorage.getItem('cookies')) document.getElementById('cookie-banner').style.display = 'none';
+  function acceptCookies() { localStorage.setItem('cookies','accepted'); document.getElementById('cookie-banner').style.display='none'; }
+  function closeCookies() { localStorage.setItem('cookies','rejected'); document.getElementById('cookie-banner').style.display='none'; }
+</script>
+</body>
+</html>
