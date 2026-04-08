@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Solicita tu estudio gratuito | Alquila Sin Problemas</title>
   <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1DLY5JELX"></script>
@@ -18,74 +19,89 @@
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','867315569693475');fbq('track','PageView');fbq('track','Lead');</script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=867315569693475&ev=PageView&noscript=1"/></noscript>
 
-  <link rel="stylesheet" href="style.css">
-  <!-- Brevo form styles -->
   <style>
-    @font-face{font-display:block;font-family:Roboto;src:url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"),url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")}
-    @font-face{font-display:fallback;font-family:Roboto;font-weight:700;src:url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"),url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")}
-    #sib-container input::placeholder{text-align:left;font-family:Helvetica,sans-serif;color:#8a8c8e}
-    #sib-container a{text-decoration:underline;color:#225053}
-    .sib-form{text-align:center;background-color:transparent}
-    #sib-container{text-align:center;background-color:rgba(255,255,255,1);max-width:100%;border-radius:0;border:none;margin:0}
-  </style>
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-  <style>
-    body { background: var(--gray-light); min-height: 100vh; display: flex; flex-direction: column; }
-    .capture-wrap {
-      flex: 1; display: flex; flex-direction: column; align-items: center;
-      justify-content: center; padding: 40px 5%;
-    }
-    .capture-card {
-      background: white; border-radius: var(--radius);
-      box-shadow: var(--shadow-lg); padding: 44px 40px;
-      width: 100%; max-width: 560px;
-    }
-    .capture-logo { display: flex; justify-content: center; margin-bottom: 28px; }
-    .capture-logo img { height: 44px; width: auto; }
-    .capture-title { font-size: 1.7rem; font-weight: 900; color: var(--teal-dark); text-align: center; margin-bottom: 8px; }
-    .capture-sub { font-size: 0.95rem; color: var(--text-light); text-align: center; margin-bottom: 28px; line-height: 1.5; }
-    .capture-sub strong { color: var(--teal-dark); font-weight: 800; }
-    footer { margin-top: auto; }
-
-    @media (max-width: 600px) {
-      .capture-card { padding: 28px 20px; }
-      .capture-title { font-size: 1.4rem; }
-    }
+    :root { --teal:#1daaac; --teal-dark:#225053; --gray:#f5f5f5; --text:#2d2d2d; --text-light:#666; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat',sans-serif;background:var(--gray);min-height:100vh;display:flex;flex-direction:column;color:var(--text);-webkit-font-smoothing:antialiased}
+    .navbar{display:flex;align-items:center;justify-content:center;padding:14px 6%;background:white;box-shadow:0 2px 12px rgba(0,0,0,0.07)}
+    .navbar img{height:36px;width:auto;mix-blend-mode:multiply}
+    .capture-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 5%}
+    .capture-card{background:white;border-radius:14px;box-shadow:0 8px 40px rgba(0,0,0,0.12);padding:44px 40px;width:100%;max-width:560px}
+    .capture-title{font-size:1.6rem;font-weight:900;color:var(--teal-dark);text-align:center;margin-bottom:8px}
+    .capture-sub{font-size:0.9rem;color:var(--text-light);text-align:center;margin-bottom:28px}
+    .capture-sub strong{color:var(--teal-dark);font-weight:700}
+    .btn-primary{display:inline-block;background:var(--teal);color:white;padding:15px 34px;border-radius:50px;font-weight:800;font-size:1rem;font-family:'Montserrat',sans-serif;transition:all 0.2s;box-shadow:0 4px 15px rgba(29,170,172,0.35);border:none;cursor:pointer;width:100%}
+    .btn-primary:hover{background:var(--teal-dark)}
+    footer{background:#1a1a1a;color:#ccc;text-align:center;padding:20px 6%;font-size:0.82rem}
+    footer a{color:#aaa}
+    footer a:hover{color:var(--teal)}
+    .footer-links{margin:6px 0 8px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+    @media(max-width:600px){.capture-card{padding:28px 18px}.capture-title{font-size:1.3rem}}
   </style>
 </head>
 <body>
 
+<nav class="navbar">
+  <a href="index.html"><img src="images/logo.png" alt="Alquila Sin Problemas"></a>
+</nav>
+
 <div class="capture-wrap">
   <div class="capture-card">
-    <div class="capture-logo">
-      <a href="index.html"><img src="images/logo.png" alt="Alquila Sin Problemas"></a>
-    </div>
     <h1 class="capture-title">Solicita tu estudio gratuito</h1>
     <p class="capture-sub">Rellena el formulario y te hacemos una propuesta <strong>sin compromiso, sin coste, sin obligación.</strong></p>
 
-    <!-- FORMULARIO ASP META -->
-    <div class="sib-form">
-      <div id="sib-form-container" class="sib-form-container">
-        <div id="sib-container" class="sib-container--large sib-container--vertical">
-          <form id="sib-form" method="POST" action="/api/submit-meta">
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="NOMBRE" data-required="*">Tu nombre y apellidos</label><div class="entry__field"><input class="input" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-sms-field sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="SMS" data-required="*">Tu teléfono (WhatsApp)</label><div class="sib-sms-input-wrapper" style="direction:ltr"><div class="sib-sms-input" data-placeholder="" data-required="1" data-country-code="ES" data-whatsapp-country-code="ES" data-value="" data-whatsappvalue="" data-attributename="SMS"><div class="entry__field"><select class="input" name="SMS__COUNTRY_CODE" data-required="true"><option value="+34" selected>+34 ES</option><option value="+1">+1 US</option><option value="+44">+44 GB</option><option value="+33">+33 FR</option><option value="+49">+49 DE</option><option value="+39">+39 IT</option><option value="+351">+351 PT</option></select></div><div class="entry__field" style="width:100%"><input type="tel" class="input" id="SMS" name="SMS" autocomplete="off" placeholder="SMS" data-required="true" required/></div></div><div class="sib-sms-tooltip"><div class="sib-sms-tooltip__box">El campo SMS debe contener entre 6 y 19 cifras e incluir el prefijo del país sin «+» ni «0» delante (ej.: 34xxxxxxxxxxx para España)</div><span class="sib-sms-tooltip__icon">?</span></div></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label><label class="entry__error entry__error--secondary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="EMAIL" data-required="*">Tu email</label><div class="entry__field"><input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="DIRECCION" data-required="*">Dirección completa de la vivienda</label><div class="entry__field"><textarea rows="2" class="input" maxlength="500" id="DIRECCION" name="DIRECCION" autocomplete="off" placeholder="(Calle, nº, piso, código postal, municipio...)" data-required="true" required></textarea></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="M2" data-required="*">M2 útiles (aprox.)</label><div class="entry__field"><input maxlength="200" type="text" data-numeric="true" class="input" id="M2" name="M2" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="HABITACIONES" data-required="*">Nº de habitaciones</label><div class="entry__field"><input maxlength="200" type="text" data-numeric="true" class="input" id="HABITACIONES" name="HABITACIONES" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="BANOS" data-required="*">Nº de baños y/o aseos</label><div class="entry__field"><input maxlength="200" type="text" data-numeric="true" class="input" id="BANOS" name="BANOS" autocomplete="off" data-required="true" required/></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-input sib-form-block"><div class="form__entry entry_block"><div class="form__label-row"><label class="entry__label" style="font-weight:700;text-align:left;font-size:16px;font-family:Helvetica,sans-serif;color:#225053" for="COMENTARIOS">Comentarios adicionales (opcional)</label><div class="entry__field"><textarea rows="2" class="input" maxlength="500" id="COMENTARIOS" name="COMENTARIOS" autocomplete="off"></textarea></div></div><label class="entry__error entry__error--primary" style="font-size:16px;text-align:left;font-family:Helvetica,sans-serif;color:#661d1d;background-color:#ffeded;border-radius:3px;border-color:#ff4949;"></label></div></div></div>
-            <div style="padding:8px 0"><div class="sib-form__declaration" style="direction:ltr"><div style="font-size:14px;text-align:left;font-family:Helvetica,sans-serif;color:#687484;background-color:transparent;padding-left:10px"><p>Al enviar este formulario, aceptas la <a target="_blank" href="politica-privacidad.html">Política de privacidad</a> y el tratamiento de tus datos.</p></div></div></div>
-            <div style="padding:8px 0"><div class="sib-form-block" style="text-align:center"><button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:18px;text-align:center;font-weight:700;font-family:Helvetica,sans-serif;color:#FFFFFF;background-color:#1daaac;border-radius:20px;border-width:0px" form="sib-form" type="submit">Solicitar estudio gratuito</button></div></div>
-            <input type="text" name="email_address_check" value="" class="input--hidden">
-            <input type="hidden" name="locale" value="es">
-            <input type="hidden" name="html_type" value="simple">
-          </form>
+    <form method="POST" action="/api/submit-meta" novalidate>
+      <div style="margin-bottom:14px">
+        <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Tu nombre y apellidos *</label>
+        <input type="text" name="NOMBRE" required style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Por favor introduce tu nombre')" oninput="this.setCustomValidity('')">
+      </div>
+      <div style="margin-bottom:14px">
+        <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Tu teléfono (WhatsApp) *</label>
+        <div style="display:flex;gap:8px">
+          <select name="SMS__COUNTRY_CODE" style="padding:11px 10px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.88rem;flex-shrink:0">
+            <option value="+34" selected>+34 ES</option>
+            <option value="+1">+1 US</option>
+            <option value="+44">+44 GB</option>
+            <option value="+33">+33 FR</option>
+            <option value="+49">+49 DE</option>
+            <option value="+39">+39 IT</option>
+            <option value="+351">+351 PT</option>
+          </select>
+          <input type="tel" name="SMS" required pattern="[0-9]{6,15}" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" placeholder="612345678" oninvalid="this.setCustomValidity('Introduce un número de teléfono válido')" oninput="this.setCustomValidity('');this.value=this.value.replace(/[^0-9]/g,'')">
         </div>
       </div>
-    </div>
-
+      <div style="margin-bottom:14px">
+        <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Tu email *</label>
+        <input type="email" name="EMAIL" required style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Introduce un email válido')" oninput="this.setCustomValidity('')">
+      </div>
+      <div style="margin-bottom:14px">
+        <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Dirección completa de la vivienda *</label>
+        <textarea name="DIRECCION" required rows="2" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem;resize:vertical" placeholder="Calle, nº, piso, código postal, municipio..." oninvalid="this.setCustomValidity('Introduce la dirección de la vivienda')" oninput="this.setCustomValidity('')"></textarea>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px">
+        <div>
+          <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">M² útiles *</label>
+          <input type="number" name="M2" required min="1" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Introduce los m²')" oninput="this.setCustomValidity('')">
+        </div>
+        <div>
+          <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Habitaciones *</label>
+          <input type="number" name="HABITACIONES" required min="1" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Introduce el nº de habitaciones')" oninput="this.setCustomValidity('')">
+        </div>
+        <div>
+          <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Baños *</label>
+          <input type="number" name="BANOS" required min="1" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Introduce el nº de baños')" oninput="this.setCustomValidity('')">
+        </div>
+      </div>
+      <div style="margin-bottom:20px">
+        <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Comentarios <span style="font-weight:400;color:var(--text-light)">(opcional)</span></label>
+        <textarea name="COMENTARIOS" rows="2" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem;resize:vertical"></textarea>
+      </div>
+      <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:18px;display:flex;align-items:flex-start;gap:8px">
+        <span>🔒</span>
+        <span>Al enviar aceptas la <a href="politica-privacidad.html" style="color:var(--teal);text-decoration:underline">Política de privacidad</a> y el tratamiento de tus datos.</span>
+      </div>
+      <button type="submit" class="btn-primary">Solicitar estudio gratuito</button>
+    </form>
   </div>
 </div>
 
@@ -97,7 +113,6 @@
   </div>
   <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
 </footer>
-
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
