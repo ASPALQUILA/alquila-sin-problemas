@@ -1,5 +1,5 @@
 const BREVO_API_KEY = process.env.BREVO_API_KEY;
-const LIST_ID = 3;
+const LIST_ID = 4;
 const NOTIFY_EMAIL = 'alquilasinproblemas@gmail.com';
 const SENDER_EMAIL = 'hola@alquilasinproblemas.com';
 const SENDER_NAME = 'Alquila Sin Problemas';
@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   const telefono = `${SMS__COUNTRY_CODE || '+34'}${SMS || ''}`;
 
   try {
-    // 1. Guardar contacto en Brevo lista ASP WEB
+    // 1. Guardar contacto en Brevo lista ASP META
     await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: { 'api-key': BREVO_API_KEY, 'Content-Type': 'application/json' },
@@ -30,12 +30,12 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         sender: { name: SENDER_NAME, email: SENDER_EMAIL },
         to: [{ email: NOTIFY_EMAIL }],
-        subject: '🏠 NUEVO LEAD WEB',
+        subject: '📱 NUEVO LEAD META',
         htmlContent: `
           <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;border:1px solid #ddd;border-radius:8px;overflow:hidden">
-            <div style="background:#225053;padding:20px;text-align:center">
-              <h2 style="color:white;margin:0">🏠 NUEVO LEAD WEB</h2>
-              <p style="color:#1daaac;margin:4px 0 0">Alquila Sin Problemas</p>
+            <div style="background:#1daaac;padding:20px;text-align:center">
+              <h2 style="color:white;margin:0">📱 NUEVO LEAD META</h2>
+              <p style="color:#225053;margin:4px 0 0;font-weight:700">Alquila Sin Problemas</p>
             </div>
             <div style="padding:24px">
               <table style="width:100%;border-collapse:collapse">
@@ -50,7 +50,7 @@ export default async function handler(req, res) {
               </table>
             </div>
             <div style="background:#f7fafa;padding:16px;text-align:center;font-size:12px;color:#888">
-              Lead recibido desde la landing principal · alquilasinproblemas.com
+              Lead recibido desde campaña Meta Ads · alquilasinproblemas.com
             </div>
           </div>
         `
