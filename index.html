@@ -195,11 +195,12 @@
    @media (max-width: 768px) {
 .final-cta-img { display: block; order: -1; margin-bottom: 24px; }
   .section { padding: 55px 5%; }
-    .ba-grid { grid-template-columns: 1fr; gap: 60px; }
+    .ba-grid { grid-template-columns: 1fr; gap: 30px; }
 .ba-pair { flex-direction: column; align-items: center; height: auto; gap: 0; padding: 20px 0; }
 .ba-photo { width: 80%; transform: none !important; }
 .ba-photo:first-child { transform: rotate(-2deg) !important; z-index: 1; margin-bottom: -30px; }
 .ba-photo:last-child { transform: rotate(2deg) !important; z-index: 2; }
+.ba-photo::after { font-size: 0.8rem; bottom: 6px; }
   .hero h1 { font-size: 35px; }
   .form-wrapper { padding: 28px 18px; }
   .btn-nav { display: none; }
@@ -220,8 +221,9 @@
 .section-title { font-size: 32px !important; }
 .form-title { font-size: 32px !important; }
 .final-cta-text h2 { font-size: 32px !important; }
+.comp-list { gap: 18px; }
 .comp-list li { font-size: 18px; }
-.comp-footer { font-size: 18px; }
+.comp-footer { font-size: 20px; }
 .step-body p { font-size: 16px; }
 .faq-q { font-size: 18px; }
 .faq-a { font-size: 16px; }
@@ -232,10 +234,14 @@ input, select, textarea { font-size: 16px !important; }
 label { font-size: 16px !important; }
 .hero-note { font-size: 16px; }
 .stat-desc { font-size: 19px; }
-.comp-title { font-size: 20px; }
+.comp-title { font-size: 24px; }
 .hero-sub { font-size: 18px; }
 .stat-label { font-size: 25px; }
-.step-body h3 { font-size: 20px; }
+.step-body h3 { font-size: 22px; }
+.form-title { line-height: 1.3; }
+.form-sub { padding-top: 20px; padding-bottom: 30px; }
+.form-wrapper .grid-3 { grid-template-columns: 1fr 1fr; }
+.form-grid-3 { grid-template-columns: 1fr 1fr !important; }
 .comp-list li { display: block; padding-left: 22px; position: relative; }
 .comp-list li::before { position: absolute; left: 0; top: 2px; font-size: 1.4rem; }
 .stat-item:last-child { padding-bottom: 32px; }
@@ -448,7 +454,7 @@ label { font-size: 16px !important; }
           <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Dirección completa de la vivienda *</label>
           <textarea name="DIRECCION" required rows="2" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem;resize:vertical" placeholder="Calle, nº, piso, código postal, municipio..." oninvalid="this.setCustomValidity('Introduce la dirección de la vivienda')" oninput="this.setCustomValidity('')"></textarea>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px" class="form-grid-3">
           <div>
             <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">M² útiles *</label>
             <input type="number" name="M2" required min="1" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Introduce los m²')" oninput="this.setCustomValidity('')">
@@ -466,7 +472,7 @@ label { font-size: 16px !important; }
           <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Comentarios adicionales <span style="font-weight:400;color:var(--text-light)">(opcional)</span></label>
           <textarea name="COMENTARIOS" rows="2" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem;resize:vertical"></textarea>
         </div>
-        <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:18px">
+        <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:30px">
           Al enviar este formulario aceptas la <a href="politica-privacidad.html" style="color:var(--teal);text-decoration:underline">Política de privacidad</a> y el tratamiento de tus datos.
         </div>
         <button type="submit" class="btn-primary" style="width:100%;font-size:1rem;padding:15px">Solicitar estudio gratuito</button>
@@ -512,7 +518,7 @@ label { font-size: 16px !important; }
     <div class="final-cta-inner">
       <div class="final-cta-text">
         <h2>Descubre <span>cuánto puede generar tu vivienda</span> con el Método Alquila Sin Problemas</h2>
-        <p>Solo trabajamos con <strong>viviendas en Mallorca (actualmente)</strong> y a partir de <strong>3 habitaciones.</strong> Si tu vivienda encaja, podemos estudiar tu caso sin compromiso.</p>
+        <p>Solo trabajamos con <strong>viviendas en Mallorca (actualmente)</strong> y a partir de <strong>3 habitaciones.</strong> <br>Si tu vivienda encaja, podemos estudiar tu caso sin compromiso.</p>
         <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
       </div>
       <div class="final-cta-img">
