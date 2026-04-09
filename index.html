@@ -470,7 +470,7 @@
 </section>
 
 <footer>
-  <p><a href="/cdn-cgi/l/email-protection#e38b8c8f82a3828f92968a8f82908a8d93918c818f868e8290cd808c8e"><span class="__cf_email__" data-cfemail="83ebecefe2c3e2eff2f6eaefe2f0eaedf3f1ece1efe6eee2f0ade0ecee">[email&#160;protected]</span></a></p>
+  <p><a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
   <div class="footer-links">
     <a href="aviso-legal.html">Aviso legal</a>
     <a href="politica-privacidad.html">Política de privacidad</a>
@@ -479,7 +479,7 @@
   <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
@@ -490,6 +490,8 @@
     });
   });
   if (localStorage.getItem('cookies')) document.getElementById('cookie-banner').style.display = 'none';
-  function acceptCookies() { localStorage.setItem('cookies','1'); document.getElementById('cookie-banner').style.display='none'; }
-  function closeCookies() { document.getElementById('cookie-banner').style.display='none'; }
-  function acceptCookies() { localStorag
+  function acceptCookies() { localStorage.setItem('cookies', 'accepted'); document.getElementById('cookie-banner').style.display = 'none'; }
+  function closeCookies() { localStorage.setItem('cookies', 'rejected'); document.getElementById('cookie-banner').style.display = 'none'; }
+</script>
+</body>
+</html>
