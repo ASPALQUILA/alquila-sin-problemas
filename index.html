@@ -86,7 +86,7 @@
     .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 500px; background: #f7fafa; overflow: hidden; }
     .hero-content { padding: 60px 5% 60px 8%; display: flex; flex-direction: column; justify-content: center; gap: 32px; }
     .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--teal-dark); line-height: 1.3; }
-    .hero h1 span { color: var(--teal); display: inline; }
+    .hero h1 span { color: var(--teal); display: block; white-space: nowrap; }
     .hero-sub { font-size: 1.05rem; color: var(--text); font-weight: 500; }
     .hero-sub strong { font-weight: 800; }
     .hero-note { font-size: 0.85rem; color: var(--text-light); margin-top: -8px; }
@@ -262,7 +262,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Cobra cada mes — <span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
+    <h1>Cobra cada mes<br><span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
     <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br><strong>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</strong></p>
     <div>
       <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
