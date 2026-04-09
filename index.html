@@ -90,15 +90,15 @@
     }
     .hero::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to right, rgba(255,255,255,0.75) 40%, rgba(255,255,255,0) 70%);
+      background: linear-gradient(to right, rgba(247,250,250,0.95) 45%, rgba(247,250,250,0.3) 100%);
     }
     .hero-content {
       position: relative; z-index: 1;
-      padding: 10px 8% 30px; max-width: 580px;
-      display: flex; flex-direction: column; gap: 24px;
+      padding: 70px 8%; max-width: 620px;
+      display: flex; flex-direction: column; gap: 32px;
     }
     .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--teal-dark); line-height: 1.3; }
-    .hero h1 span { color: var(--teal); display: block; }
+    .hero h1 span { color: var(--teal); display: block; white-space: nowrap; }
     .hero-sub { font-size: 1.05rem; color: var(--text); font-weight: 500; }
     .hero-sub strong { font-weight: 800; }
     .hero-note { font-size: 0.85rem; color: var(--text-light); margin-top: -8px; }
@@ -222,6 +222,7 @@
 
     /* RESPONSIVE */
     @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
       .hero-img { height: 260px; }
       .hero-content { padding: 44px 6%; }
       .hero h1 { font-size: 2rem; }
@@ -270,12 +271,15 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Cobra cada mes<br><span>Sin Impagos, Sin Riesgos<br>y Sin Gestión</span></h1>
+    <h1>Cobra cada mes<br><span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
     <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br><strong>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</strong></p>
     <div>
       <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
       <p class="hero-note" style="margin-top:12px;">📍 Palma de Mallorca y alrededores &nbsp;·&nbsp; 🛏️ A partir de 3 habitaciones</p>
     </div>
+  </div>
+  <div class="hero-img">
+    <img src="images/3-FOTO-HEADER-BASE-alquila-sin-probemas-tu-vivienda-foto3.jpg" alt="Propietarios tranquilos cobrando su renta fija" loading="eager">
   </div>
 </section>
 
