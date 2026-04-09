@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cobra cada mes, Sin Impagos, Sin Riesgos, Sin Gestión | Alquila Sin Problemas</title>
   <meta name="description" content="Nos convertimos en tu único inquilino. Cobras una renta fija cada mes en Palma de Mallorca y alrededores, sin impagos, sin riesgos, sin gestión.">
-  <link rel="icon" type="image/png" href="images/1-FAVICON WEB-pequeño-logo-alquila-sin-problemas-1.png">
+  <link rel="icon" type="image/png" href="images/1-FAVICON-WEB-pequeno-logo-alquila-sin-problemas-1.png">
 
-  <!-- SEO & Open Graph (WhatsApp, redes sociales) -->
+  <!-- SEO & Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alquilasinproblemas.com/">
   <meta property="og:title" content="Cobra cada mes, Sin Impagos, Sin Riesgos, Sin Gestión | Alquila Sin Problemas">
   <meta property="og:description" content="Nos convertimos en tu único inquilino. Cobras una renta fija cada mes en Palma de Mallorca y alrededores. Sin impagos, sin riesgos, sin gestión. 0€ de coste para ti.">
-  <meta property="og:image" content="https://alquilasinproblemas.com/images/1-FAVICON WEB-pequeño-logo-alquila-sin-problemas-1.png">
+  <meta property="og:image" content="https://alquilasinproblemas.com/images/1A-LOGO-GOOGLE-alquila-sin-problemas-tu-vivienda.png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
   <meta property="og:locale" content="es_ES">
@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cobra cada mes, Sin Impagos, Sin Riesgos, Sin Gestión | Alquila Sin Problemas">
   <meta name="twitter:description" content="Nos convertimos en tu único inquilino. Cobras una renta fija cada mes. Sin impagos, sin riesgos, sin gestión. 0€ de coste.">
-  <meta name="twitter:image" content="https://alquilasinproblemas.com/images/1-FAVICON WEB-pequeño-logo-alquila-sin-problemas-1.png">
+  <meta name="twitter:image" content="https://alquilasinproblemas.com/images/1A-LOGO-GOOGLE-alquila-sin-problemas-tu-vivienda.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,17 +36,10 @@
 
   <style>
     :root {
-      --teal: #1daaac;
-      --teal-dark: #225053;
-      --teal-light: #e8f7f7;
-      --gray: #f5f5f5;
-      --white: #ffffff;
-      --text: #2d2d2d;
-      --text-light: #666;
-      --red: #e53e3e;
-      --radius: 14px;
-      --shadow: 0 4px 20px rgba(0,0,0,0.08);
-      --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+      --teal: #1daaac; --teal-dark: #225053; --teal-light: #e8f7f7;
+      --gray: #f5f5f5; --white: #ffffff; --text: #2d2d2d; --text-light: #666;
+      --red: #e53e3e; --radius: 14px;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08); --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -82,27 +75,31 @@
     }
     .btn-nav:hover { background: var(--teal-dark); transform: translateY(-1px); }
 
-    /* HERO */
+    /* HERO - foto de fondo, texto a la izquierda */
     .hero {
-      position: relative; min-height: 520px;
+      position: relative;
+      min-height: 520px;
       background: url('images/3-FOTO-HEADER-BASE-alquila-sin-probemas-tu-vivienda-foto3.jpg') center center / cover no-repeat;
-      display: flex; align-items: center;
+      display: flex;
+      align-items: center;
     }
     .hero::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to right, rgba(247,250,250,0.95) 45%, rgba(247,250,250,0.3) 100%);
+      background: linear-gradient(to right, rgba(247,250,250,0.88) 50%, rgba(247,250,250,0.1) 100%);
     }
     .hero-content {
       position: relative; z-index: 1;
-      padding: 70px 8%; max-width: 620px;
-      display: flex; flex-direction: column; gap: 32px;
+      padding: 20px 8% 40px;
+      max-width: 600px;
+      display: flex; flex-direction: column; gap: 28px;
     }
     .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--teal-dark); line-height: 1.3; }
-    .hero h1 span { color: var(--teal); display: block; white-space: nowrap; }
+    .hero h1 span { color: var(--teal); display: block; }
     .hero-sub { font-size: 1.05rem; color: var(--text); font-weight: 500; }
     .hero-sub strong { font-weight: 800; }
-    .hero-note { font-size: 0.85rem; color: var(--text-light); margin-top: -8px; }
-    .hero-img { display: none; }
+    .hero-note { font-size: 0.85rem; color: var(--text-light); }
+
+    /* BUTTONS */
     .btn-primary {
       display: inline-block; background: var(--teal); color: white;
       padding: 10px 34px; border-radius: 50px; font-weight: 800; font-size: 1.1rem;
@@ -124,7 +121,7 @@
     .section-gray { background: var(--gray); }
     .container { max-width: 1100px; margin: 0 auto; }
     .text-center { text-align: center; }
-    .section-title { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 30px; line-height: 1.4; }
+    .section-title { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.3; }
     .section-title span { color: var(--teal); }
     .section-sub { font-size: 1rem; color: var(--text-light); max-width: 660px; margin: 0 auto 60px; }
 
@@ -152,9 +149,8 @@
     .ba-pair { overflow: hidden; }
     .ba-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .ba-photo { overflow: hidden; aspect-ratio: 4/3; border-radius: 10px; }
-    .ba-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; filter: saturate(1.3) contrast(1.1) brightness(1.05); }
+    .ba-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(1.3) contrast(1.1) brightness(1.05); }
     .ba-photo img.antes { filter: none; }
-    .ba-photo:hover img { transform: scale(1.04); }
     .ba-labels-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
     .ba-label-ext { text-align: center; padding: 5px; font-size: 0.78rem; font-weight: 800; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px; }
 
@@ -174,25 +170,15 @@
     .testimonials-section .section-title { color: white; }
     .testimonials-section .section-title span { color: var(--teal); }
     .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
-    .testimonial-card { background: transparent; border-radius: var(--radius); overflow: hidden; box-shadow: none; }
+    .testimonial-card { border-radius: var(--radius); overflow: hidden; }
     .testimonial-card img { width: 100%; height: auto; }
 
-    /* FORM SECTION */
+    /* FORM */
     .form-section { background: var(--gray); }
     .form-wrapper { background: white; border-radius: var(--radius); padding: 44px 40px; box-shadow: var(--shadow-lg); max-width: 580px; margin: 0 auto; }
     .form-title { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 6px; text-align: center; }
     .form-sub { font-size: 0.92rem; color: var(--text-light); text-align: center; margin-bottom: 28px; }
     .form-sub strong { color: var(--teal-dark); font-weight: 700; }
-
-    /* BREVO FORM OVERRIDES */
-    .sib-form { text-align: center; background: transparent; }
-    #sib-container { text-align: center; background: transparent !important; max-width: 100% !important; border-radius: 0 !important; border: none !important; }
-    .sib-form-block { margin-bottom: 4px; }
-    .entry__label { font-family: 'Montserrat', sans-serif !important; font-size: 0.88rem !important; color: var(--teal-dark) !important; font-weight: 700 !important; }
-    .input { font-family: 'Montserrat', sans-serif !important; border-radius: 8px !important; border: 1.5px solid #ddd !important; padding: 10px 14px !important; font-size: 0.92rem !important; }
-    .input:focus { border-color: var(--teal) !important; outline: none !important; box-shadow: 0 0 0 3px rgba(29,170,172,0.15) !important; }
-    .sib-form-block__button { font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important; border-radius: 50px !important; padding: 14px 32px !important; font-size: 1rem !important; width: 100% !important; }
-    .entry__error { font-family: 'Montserrat', sans-serif !important; font-size: 0.8rem !important; }
 
     /* FAQ */
     .faq-section { background: white; }
@@ -222,9 +208,7 @@
 
     /* RESPONSIVE */
     @media (max-width: 960px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-img { height: 260px; }
-      .hero-content { padding: 44px 6%; }
+      .hero-content { padding: 30px 6%; }
       .hero h1 { font-size: 2rem; }
       .comparison-grid { grid-template-columns: 1fr; }
       .steps-grid { grid-template-columns: 1fr; }
@@ -243,7 +227,7 @@
       .ba-photo { aspect-ratio: 16/9; }
       .hero h1 { font-size: 1.75rem; }
       .form-wrapper { padding: 28px 18px; }
-      .navbar img { height: 30px; }
+      .navbar img { height: 38px; }
     }
     @media (max-width: 480px) {
       .hero h1 { font-size: 1.5rem; }
@@ -271,15 +255,12 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Cobra cada mes<br><span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
+    <h1>Cobra cada mes<br><span>Sin Impagos, Sin Riesgos<br>y Sin Gestión</span></h1>
     <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br><strong>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</strong></p>
     <div>
       <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
       <p class="hero-note" style="margin-top:12px;">📍 Palma de Mallorca y alrededores &nbsp;·&nbsp; 🛏️ A partir de 3 habitaciones</p>
     </div>
-  </div>
-  <div class="hero-img">
-    <img src="images/3-FOTO-HEADER-BASE-alquila-sin-probemas-tu-vivienda-foto3.jpg" alt="Propietarios tranquilos cobrando su renta fija" loading="eager">
   </div>
 </section>
 
@@ -427,14 +408,13 @@
   </div>
 </section>
 
-<!-- FORM SECTION -->
+<!-- FORM -->
 <section class="section form-section" id="formulario">
   <div class="container">
     <div class="form-wrapper">
       <h2 class="form-title">Solicita tu <span style="color:var(--teal)">estudio gratuito</span></h2>
       <p class="form-sub">Analizamos tu vivienda y te hacemos una propuesta <strong>sin compromiso, sin coste, sin obligación.</strong></p>
-
-      <form method="POST" action="/api/submit-web" novalidate id="form-web">
+      <form method="POST" action="/api/submit-web" novalidate>
         <div style="margin-bottom:14px">
           <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Tu nombre y apellidos *</label>
           <input type="text" name="NOMBRE" required style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Por favor introduce tu nombre')" oninput="this.setCustomValidity('')">
@@ -480,8 +460,8 @@
           <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Comentarios adicionales <span style="font-weight:400;color:var(--text-light)">(opcional)</span></label>
           <textarea name="COMENTARIOS" rows="2" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem;resize:vertical"></textarea>
         </div>
-        <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:18px;display:flex;align-items:flex-start;gap:8px">
-          <span>Al enviar este formulario aceptas la <a href="politica-privacidad.html" style="color:var(--teal);text-decoration:underline">Política de privacidad</a> y el tratamiento de tus datos.</span>
+        <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:18px">
+          Al enviar este formulario aceptas la <a href="politica-privacidad.html" style="color:var(--teal);text-decoration:underline">Política de privacidad</a> y el tratamiento de tus datos.
         </div>
         <button type="submit" class="btn-primary" style="width:100%;font-size:1rem;padding:15px">Solicitar estudio gratuito</button>
       </form>
@@ -551,8 +531,6 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
       const item = q.parentElement;
@@ -561,8 +539,6 @@
       if (!isOpen) item.classList.add('open');
     });
   });
-
-  // Cookie banner
   if (localStorage.getItem('cookies')) document.getElementById('cookie-banner').style.display = 'none';
   function acceptCookies() { localStorage.setItem('cookies','accepted'); document.getElementById('cookie-banner').style.display='none'; }
   function closeCookies() { localStorage.setItem('cookies','rejected'); document.getElementById('cookie-banner').style.display='none'; }
