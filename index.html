@@ -549,6 +549,21 @@
   function acceptCookies() { localStorage.setItem('cookies', 'accepted'); document.getElementById('cookie-banner').style.display = 'none'; }
   function closeCookies() { localStorage.setItem('cookies', 'rejected'); document.getElementById('cookie-banner').style.display = 'none'; }
 </script>
+<a href="#" id="btn-top" aria-label="Volver arriba" style="
+  position:fixed; bottom:28px; right:28px; z-index:9999;
+  background:var(--teal); color:white;
+  width:48px; height:48px; border-radius:50%;
+  display:none; align-items:center; justify-content:center;
+  box-shadow:0 4px 16px rgba(0,0,0,0.2);
+  font-size:1.4rem; line-height:1; transition:background 0.2s;
+">▲</a>
+<script>
+  var btnTop = document.getElementById('btn-top');
+  window.addEventListener('scroll', function() {
+    btnTop.style.display = window.scrollY > 300 ? 'flex' : 'none';
+  });
+</script>
 </body>
 </html>
+
 
