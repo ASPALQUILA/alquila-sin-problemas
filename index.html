@@ -88,6 +88,7 @@
     .hero-sub strong { font-weight: 800; }
     .hero-note { font-size: 0.95rem; color: var(--text-light); display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px; }
     .hero-note span { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.hero-note span svg { width: 32px; height: 32px; }
     .btn-primary {
       display: inline-block; background: var(--teal); color: white;
       padding: 10px 34px; border-radius: 50px; font-weight: 800; font-size: 1.1rem;
@@ -199,24 +200,24 @@
   .hero h1 { font-size: 35px; }
   .form-wrapper { padding: 28px 18px; }
   .btn-nav { display: none; }
-.menu-toggle { display: flex; align-items: center; justify-content: center; background: var(--teal); border: none; border-radius: 50px; padding: 10px 18px; cursor: pointer; font-family: 'Montserrat', sans-serif; font-weight: 700; color: white; font-size: 0.9rem; }
+.menu-toggle { display: flex; align-items: center; justify-content: center; background: transparent; border: none; padding: 10px; cursor: pointer; font-size: 1.5rem; color: #000; }
 .mobile-menu { position: absolute; top: 100%; left: 0; right: 0; background: white; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 20px 6%; z-index: 99; }
 .mobile-menu.open { display: block; }
   .hero { background: url('images/3-FOTO-HEADER-WEB-alquila-sin-probemas-tu-vivienda-foto3.jpg') center top / cover no-repeat; min-height: 620px; }
   .hero-content { padding-bottom: 40px; }
 .hero-note { margin-bottom: 320px; font-size: 1.2rem; }
   .mobile-br { display: block; }
-.btn-primary { display: block; text-align: center; font-size: 1rem; }
+.btn-primary { display: block; text-align: center; font-size: 1.1rem; }
 .btn-nav { font-size: 1.3rem; }
 .btn-cookie { font-size: 1.3rem; }
 .hero-sub { font-size: 1.3rem; }
 .stat-num { font-size: 4rem; }
 .stat-label { font-size: 1.5rem; }
 .stat-desc { font-size: 1.2rem; }
+h2 { font-size: 32px; }
 }
     @media (max-width: 480px) {
-  .hero h1 { font-size: 35px; }
-  .section-title { font-size: 1.35rem; }
+    .section-title { font-size: 1.35rem; }
 }
   </style>
 </head>
@@ -246,7 +247,7 @@
     <div>
       <p class="hero-note">
         <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#1daaac"/></svg>Actualmente en MALLORCA</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" fill="#1daaac"/></svg>Viviendas de 3 habitaciones o más</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z" fill="#1daaac"/></svg>A partir de 3 habitaciones</span>
       </p>
       <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
     </div>
@@ -486,8 +487,7 @@
     <div class="final-cta-inner">
       <div class="final-cta-text">
         <h2>Descubre <span>cuánto puede generar tu vivienda</span> con el Método Alquila Sin Problemas</h2>
-        <p>Solo trabajamos con viviendas a partir de <strong>3 habitaciones.</strong> Si tu vivienda encaja, podemos estudiar tu caso sin compromiso.<br>
-<strong>Actualmente en MALLORCA</strong></p>
+        <p>Solo trabajamos con viviendas <strong>en MALLORCA (actualmente) y </strong></p>a partir de <strong>3 habitaciones.</strong> Si tu vivienda encaja, podemos estudiar tu caso sin compromiso.</p>
         <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
       </div>
       <div class="final-cta-img">
