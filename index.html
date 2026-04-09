@@ -193,13 +193,13 @@
       .stat-item:last-child { border-bottom: none; }
     }
    @media (max-width: 768px) {
-.final-cta-img { display: block; }
+.final-cta-img { display: block; order: -1; margin-bottom: 24px; }
   .section { padding: 55px 5%; }
-    .ba-grid { grid-template-columns: 1fr; }
-.ba-pair { flex-direction: column; align-items: center; height: auto; gap: 20px; padding: 20px 0; }
+    .ba-grid { grid-template-columns: 1fr; gap: 60px; }
+.ba-pair { flex-direction: column; align-items: center; height: auto; gap: 0; padding: 20px 0; }
 .ba-photo { width: 80%; transform: none !important; }
-.ba-photo:first-child { transform: rotate(-2deg) !important; }
-.ba-photo:last-child { transform: rotate(2deg) !important; }
+.ba-photo:first-child { transform: rotate(-2deg) !important; z-index: 1; margin-bottom: -30px; }
+.ba-photo:last-child { transform: rotate(2deg) !important; z-index: 2; }
   .hero h1 { font-size: 35px; }
   .form-wrapper { padding: 28px 18px; }
   .btn-nav { display: none; }
@@ -220,22 +220,26 @@
 .section-title { font-size: 32px !important; }
 .form-title { font-size: 32px !important; }
 .final-cta-text h2 { font-size: 32px !important; }
-.comp-list li { font-size: 16px; }
-.comp-footer { font-size: 16px; }
+.comp-list li { font-size: 18px; }
+.comp-footer { font-size: 18px; }
 .step-body p { font-size: 16px; }
-.faq-q { font-size: 16px; }
+.faq-q { font-size: 18px; }
 .faq-a { font-size: 16px; }
-.section-sub { font-size: 16px; }
-.hero-note { font-size: 16px; }
+.section-sub { font-size: 18px; }
+.hero-note { font-size: 18px; }
 .form-sub { font-size: 16px; }
 input, select, textarea { font-size: 16px !important; }
 label { font-size: 16px !important; }
 .hero-note { font-size: 16px; }
-.stat-desc { font-size: 16px; }
+.stat-desc { font-size: 19px; }
+.comp-title { font-size: 20px; }
 .hero-sub { font-size: 18px; }
-.stat-label { font-size: 18px; }
+.stat-label { font-size: 25px; }
+.step-body h3 { font-size: 20px; }
 .comp-list li { display: block; padding-left: 22px; position: relative; }
-.comp-list li::before { position: absolute; left: 0; top: 2px; }
+.comp-list li::before { position: absolute; left: 0; top: 2px; font-size: 1.4rem; }
+.stat-item:last-child { padding-bottom: 32px; }
+.final-cta-text p { font-size: 18px; }
 }
     @media (max-width: 480px) {
     .section-title { font-size: 1.35rem; }
