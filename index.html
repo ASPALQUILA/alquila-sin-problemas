@@ -66,7 +66,7 @@
     .hero {
       position: relative;
       min-height: 520px;
-      background: url('images/3-FOTO-HEADER-BASE-alquila-sin-probemas-tu-vivienda-foto3.jpg') center center / cover no-repeat;
+      background: url('images/3-FOTO-HEADER-BASE-alquila-sin-probemas-tu-vivienda-foto3.webp') center center / cover no-repeat;
       display: flex;
       align-items: center;
     }
@@ -423,7 +423,7 @@
     <div class="form-wrapper">
       <h2 class="form-title">Solicita tu <span style="color:var(--teal)">estudio gratuito</span></h2>
       <p class="form-sub">Analizamos tu vivienda y te hacemos una propuesta <strong>sin compromiso, sin coste, sin obligación.</strong></p>
-      <form method="POST" action="/api/submit-web" novalidate>
+      <form method="POST" action="/api/submit-web">
         <div style="margin-bottom:14px">
           <label style="display:block;font-weight:700;font-size:0.88rem;color:var(--teal-dark);margin-bottom:6px">Tu nombre y apellidos *</label>
           <input type="text" name="NOMBRE" required style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem" oninvalid="this.setCustomValidity('Por favor introduce tu nombre')" oninput="this.setCustomValidity('')">
@@ -526,7 +526,7 @@
 </section>
 
 <footer>
-  <p><a href="/cdn-cgi/l/email-protection#f49c9b9895b4959885819d9895879d9a84869b969891999587da979b99"><span class="__cf_email__" data-cfemail="177f787b7657767b66627e7b76647e79676578757b727a76643974787a">[email&#160;protected]</span></a></p>
+  <p><a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
   <div class="footer-links">
     <a href="aviso-legal.html">Aviso legal</a>
     <a href="politica-privacidad.html">Política de privacidad</a>
@@ -535,7 +535,7 @@
   <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
@@ -546,4 +546,9 @@
     });
   });
   if (localStorage.getItem('cookies')) document.getElementById('cookie-banner').style.display = 'none';
-  function acceptCookies() { localStorage.setI
+  function acceptCookies() { localStorage.setItem('cookies', 'accepted'); document.getElementById('cookie-banner').style.display = 'none'; }
+  function closeCookies() { localStorage.setItem('cookies', 'rejected'); document.getElementById('cookie-banner').style.display = 'none'; }
+</script>
+</body>
+</html>
+
