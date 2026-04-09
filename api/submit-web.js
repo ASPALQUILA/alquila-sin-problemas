@@ -13,6 +13,7 @@ export default async function handler(req, res) {
 
   const BREVO_API_KEY = process.env.BREVO_API_KEY;
   const { NOMBRE, SMS__COUNTRY_CODE, SMS, EMAIL, DIRECCION, M2, HABITACIONES, BANOS, COMENTARIOS } = body;
+const telefono = `${SMS__COUNTRY_CODE || '+34'}${SMS || ''}`;
   if (!NOMBRE || !SMS || !EMAIL || !DIRECCION || !M2 || !HABITACIONES || !BANOS) {
   return res.redirect(302, '/index.html');
 }
