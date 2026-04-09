@@ -80,7 +80,7 @@
       display: flex; flex-direction: column; gap: 0;
     }
     .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--teal-dark); line-height: 1.3; margin-bottom: 30px; }
-    .hero h1 span { color: var(--teal); display: block; }
+    .hero h1 span { color: var(--teal); display: block; } 
     .mobile-br { display: none; }
     .hero-sub { font-size: 1.05rem; color: var(--text); font-weight: 500; margin-bottom: 40px; }
     .hero-sub strong { font-weight: 800; }
@@ -189,24 +189,18 @@
       .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
       .stat-item:last-child { border-bottom: none; }
     }
-    @media (max-width: 768px) {
-      .section { padding: 55px 5%; }
-      .section-title { font-size: 1.55rem; }
-      .ba-grid { grid-template-columns: 1fr; }
-      .ba-pair { height: 220px; }
-      .hero h1 { font-size: 1.75rem; }
-      .form-wrapper { padding: 28px 18px; }
-      .navbar img { height: 38px; }
-      .hero {
-        background-image: url('images/3-FOTO-HEADER-WEB-alquila-sin-probemas-tu-vivienda-foto3.jpg');
-        background-position: center top;
-        min-height: 620px;
-        align-items: flex-start;
-      }
-      .hero-content { padding-top: 36px; padding-bottom: 200px; }
-      .hero-sub { margin-bottom: 180px; }
-      .hero h1 span br.mobile-br { display: block; }
-    }
+   @media (max-width: 768px) {
+  .section { padding: 55px 5%; }
+  .section-title { font-size: 1.55rem; }
+  .ba-grid { grid-template-columns: 1fr; }
+  .ba-pair { height: 220px; }
+  .hero h1 { font-size: 35px; }
+  .form-wrapper { padding: 28px 18px; }
+  .navbar img { height: 38px; }
+  .hero { background-image: url('images/3-FOTO-HEADER-WEB-alquila-sin-probemas-tu-vivienda-foto3.jpg'); background-position: center top; min-height: 620px; }
+  .hero-content { padding-bottom: 180px; }
+  .mobile-br { display: block; }
+}
     @media (max-width: 480px) {
       .hero h1 { font-size: 1.5rem; }
       .section-title { font-size: 1.35rem; }
@@ -230,7 +224,7 @@
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Cobra cada mes<br><span>Sin Impagos,<br class="mobile-br"> Sin Riesgos<br class="mobile-br"> y Sin Gestión</span></h1>
+    <h1>Cobra cada mes<br><span>Sin Impagos,<br class="mobile-br">Sin Riesgos<br>y Sin Gestión</span></h1>
     <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br><strong>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</strong></p>
     <div>
       <p class="hero-note">
@@ -486,7 +480,7 @@
 </section>
 
 <footer>
-  <p><a href="/cdn-cgi/l/email-protection#335b5c5f5273525f42465a5f52405a5d43415c515f565e52401d505c5e"><span class="__cf_email__" data-cfemail="a5cdcac9c4e5c4c9d4d0ccc9c4d6cccbd5d7cac7c9c0c8c4d68bc6cac8">[email&#160;protected]</span></a></p>
+  <p><a href="mailto:hola@alquilasinproblemas.com">hola@alquilasinproblemas.com</a></p>
   <div class="footer-links">
     <a href="aviso-legal.html">Aviso legal</a>
     <a href="politica-privacidad.html">Política de privacidad</a>
@@ -495,7 +489,7 @@
   <p>© <span id="year"></span> ALQUILA SIN PROBLEMAS. Todos los derechos reservados.</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   document.getElementById('year').textContent = new Date().getFullYear();
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
@@ -506,4 +500,9 @@
     });
   });
   if (localStorage.getItem('cookies')) document.getElementById('cookie-banner').style.display = 'none';
-  function acceptCookies() { localStorage.setI
+  function acceptCookies() { localStorage.setItem('cookies', 'accepted'); document.getElementById('cookie-banner').style.display = 'none'; }
+  function closeCookies() { localStorage.setItem('cookies', 'rejected'); document.getElementById('cookie-banner').style.display = 'none'; }
+</script>
+</body>
+</html>
+
