@@ -71,10 +71,10 @@
     /* NAVBAR */
     .navbar {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 14px 6%; background: var(--white);
+      padding: 10px 6%; background: var(--white);
       box-shadow: 0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 100;
     }
-    .navbar img { height: 38px; width: auto; mix-blend-mode: multiply; }
+    .navbar img { height: 50px; width: auto; mix-blend-mode: multiply; }
     .btn-nav {
       background: var(--teal); color: white; padding: 11px 24px;
       border-radius: 50px; font-weight: 700; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;
@@ -85,14 +85,14 @@
     /* HERO */
     .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 500px; background: #f7fafa; overflow: hidden; }
     .hero-content { padding: 60px 5% 60px 8%; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
-    .hero h1 { font-size: 2.5rem; font-weight: 900; color: var(--teal-dark); line-height: 1.15; }
+    .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--teal-dark); line-height: 1.3; }
     .hero h1 span { color: var(--teal); display: block; }
     .hero-sub { font-size: 1.05rem; color: var(--text); font-weight: 500; }
     .hero-sub strong { font-weight: 800; }
     .hero-note { font-size: 0.85rem; color: var(--text-light); margin-top: -8px; }
     .btn-primary {
       display: inline-block; background: var(--teal); color: white;
-      padding: 15px 34px; border-radius: 50px; font-weight: 800; font-size: 1rem;
+      padding: 10px 34px; border-radius: 50px; font-weight: 800; font-size: 1.1rem;
       font-family: 'Montserrat', sans-serif; transition: all 0.2s;
       box-shadow: 0 4px 15px rgba(29,170,172,0.35); border: none; cursor: pointer;
     }
@@ -104,16 +104,16 @@
     .stats-bar { background: var(--teal-dark); color: white; display: grid; grid-template-columns: 1fr 1fr 1fr; }
     .stat-item { padding: 28px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,0.15); }
     .stat-item:last-child { border-right: none; }
-    .stat-num { font-size: 2.2rem; font-weight: 900; color: var(--teal); line-height: 1; }
-    .stat-label { font-size: 0.88rem; font-weight: 700; margin: 4px 0 5px; text-transform: uppercase; letter-spacing: 0.5px; }
-    .stat-desc { font-size: 0.78rem; opacity: 0.8; }
+    .stat-num { font-size: 3rem; font-weight: 700; color: var(--teal); line-height: 1; }
+    .stat-label { font-size: 1.2rem; font-weight: 700; margin: 4px 0 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-desc { font-size: 0.9rem; opacity: 0.8; }
 
     /* SECTIONS */
     .section { padding: 75px 6%; }
     .section-gray { background: var(--gray); }
     .container { max-width: 1100px; margin: 0 auto; }
     .text-center { text-align: center; }
-    .section-title { font-size: 1.9rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.2; }
+    .section-title { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.3; }
     .section-title span { color: var(--teal); }
     .section-sub { font-size: 1rem; color: var(--text-light); max-width: 660px; margin: 0 auto 44px; }
 
@@ -122,17 +122,17 @@
     .comp-card { border-radius: var(--radius); padding: 32px; border: 2px solid; }
     .comp-card.bad { border-color: #fca5a5; background: #fff5f5; }
     .comp-card.good { border-color: var(--teal); background: var(--teal-light); }
-    .comp-header { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
-    .comp-header img { width: 44px; height: 44px; }
-    .comp-title { font-size: 1.15rem; font-weight: 800; }
+    .comp-header { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 22px; text-align: center; }
+    .comp-header img { width: 48px; height: 48px; }
+    .comp-title { font-size: 1.3rem; font-weight: 800; }
     .comp-card.bad .comp-title { color: var(--red); }
     .comp-card.good .comp-title { color: var(--teal-dark); }
     .comp-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .comp-list li { font-size: 0.92rem; display: flex; align-items: flex-start; gap: 8px; }
     .comp-list li::before { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
-    .comp-card.bad .comp-list li::before { content: "✗"; color: var(--red); font-weight: 900; }
-    .comp-card.good .comp-list li::before { content: "✓"; color: var(--teal); font-weight: 900; }
-    .comp-footer { margin-top: 22px; padding: 14px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; text-align: center; line-height: 1.4; }
+    .comp-card.bad .comp-list li::before { content: "✗"; color: var(--red); font-weight: 800; }
+    .comp-card.good .comp-list li::before { content: "✓"; color: var(--teal); font-weight: 800; }
+    .comp-footer { margin-top: 22px; padding: 14px 18px; border-radius: 8px; font-size: 1rem; font-weight: 700; text-align: center; line-height: 1.5; }
     .comp-card.bad .comp-footer { background: var(--red); color: white; }
     .comp-card.good .comp-footer { background: var(--teal-dark); color: white; }
 
@@ -145,7 +145,9 @@
     .ba-photo img.antes { filter: none; }
     .ba-photo:hover img { transform: scale(1.04); }
     .ba-label { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.6); color: white; font-size: 0.7rem; font-weight: 800; padding: 3px 10px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; }
-    .ba-room { background: white; padding: 12px; font-weight: 700; font-size: 0.88rem; color: var(--teal-dark); text-align: center; }
+    .ba-room { background: white; padding: 8px 12px 12px; font-weight: 700; font-size: 0.88rem; color: var(--teal-dark); text-align: center; }
+    .ba-labels-row { display: grid; grid-template-columns: 1fr 1fr; background: white; }
+    .ba-label-ext { text-align: center; padding: 6px; font-size: 0.75rem; font-weight: 800; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px; border-top: 1px solid #f0f0f0; }
 
     /* STEPS */
     .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
@@ -169,7 +171,7 @@
     /* FORM SECTION */
     .form-section { background: var(--gray); }
     .form-wrapper { background: white; border-radius: var(--radius); padding: 44px 40px; box-shadow: var(--shadow-lg); max-width: 580px; margin: 0 auto; }
-    .form-title { font-size: 1.55rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 6px; text-align: center; }
+    .form-title { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 6px; text-align: center; }
     .form-sub { font-size: 0.92rem; color: var(--text-light); text-align: center; margin-bottom: 28px; }
     .form-sub strong { color: var(--teal-dark); font-weight: 700; }
 
@@ -197,9 +199,9 @@
     /* FINAL CTA */
     .final-cta { background: var(--gray); overflow: hidden; }
     .final-cta-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
-    .final-cta-text h2 { font-size: 1.9rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.2; }
+    .final-cta-text h2 { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.3; }
     .final-cta-text h2 span { color: var(--teal); }
-    .final-cta-text p { color: var(--text-light); margin-bottom: 26px; font-size: 0.95rem; line-height: 1.7; }
+    .final-cta-text p { color: var(--text-light); margin-bottom: 32px; font-size: 0.95rem; line-height: 1.7; }
     .final-cta-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
     .final-cta-img img { width: 100%; height: 320px; object-fit: cover; object-position: right center; }
 
@@ -261,7 +263,7 @@
 <section class="hero">
   <div class="hero-content">
     <h1>Cobra cada mes<span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
-    <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</p>
+    <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br><strong>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</strong></p>
     <div>
       <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
       <p class="hero-note" style="margin-top:12px;">📍 Palma de Mallorca y alrededores &nbsp;·&nbsp; 🛏️ A partir de 3 habitaciones</p>
@@ -302,12 +304,12 @@
           <div class="comp-title">Alquiler tradicional</div>
         </div>
         <ul class="comp-list">
-          <li>Riesgo de impagos, procesos largos</li>
-          <li>Meses sin cobrar si queda vacía</li>
-          <li>Limitaciones e inseguridad jurídica</li>
-          <li>Inquilinos que no puedes desalojar</li>
-          <li>Gestión, problemas y riesgos del alquiler</li>
-          <li>Reparaciones y gastos imprevistos</li>
+          <li><strong>Riesgo de impagos</strong>, procesos largos</li>
+          <li><strong>Meses sin cobrar</strong> si queda vacía</li>
+          <li><strong>Limitaciones e inseguridad jurídica</strong></li>
+          <li>Inquilinos que <strong>no puedes desalojar</strong></li>
+          <li><strong>Gestión, problemas, riesgos</strong> del alquiler</li>
+          <li><strong>Reparaciones y gastos</strong> imprevistos</li>
         </ul>
         <div class="comp-footer">Cuando algo falla, pierdes dinero, tiempo y paz mental. Y no hay red de seguridad.</div>
       </div>
@@ -321,8 +323,8 @@
           <li><strong>Sin meses vacíos</strong>, siempre ocupada</li>
           <li><strong>Sin problemas legales</strong>, asumimos los riesgos</li>
           <li><strong>Gestión completa</strong>, tú no haces nada</li>
-          <li>Mantenimiento, reparaciones y costes incluidos</li>
-          <li>Inversión inicial <strong>sin coste para ti</strong></li>
+          <li><strong>Mantenimiento, reparaciones y costes</strong> incluidos</li>
+          <li><strong>Inversión inicial</strong> sin coste para ti</li>
         </ul>
         <div class="comp-footer">SIN gastos, SIN gestión y SIN riesgos para ti. Tú SOLO cobras cada mes, sin excepciones.</div>
       </div>
@@ -369,7 +371,7 @@
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-img">
-          <img src="images/8A-Valoramos-tu-vivienda-alquila-sin problemas.jpg" alt="Valoramos tu vivienda" loading="lazy">
+          <img src="images/8A-Valoramos-tu-vivienda-alquila-sin-problemas.jpg" alt="Valoramos tu vivienda" loading="lazy">
           <div class="step-num">01</div>
         </div>
         <div class="step-body">
@@ -379,7 +381,7 @@
       </div>
       <div class="step-card">
         <div class="step-img">
-          <img src="images/8B-invertimos-y-mejoramos-alquila-sin problemas.jpg" alt="Invertimos y mejoramos" loading="lazy">
+          <img src="images/8B-invertimos-y-mejoramos-alquila-sin-problemas.jpg" alt="Invertimos y mejoramos" loading="lazy">
           <div class="step-num">02</div>
         </div>
         <div class="step-body">
@@ -389,7 +391,7 @@
       </div>
       <div class="step-card">
         <div class="step-img">
-          <img src="images/8C-tu-cobras-nosotros-trabajamos-alquila-sin problemas.jpg" alt="Tú cobras, nosotros trabajamos" loading="lazy">
+          <img src="images/8C-tu-cobras-nosotros-trabajamos-alquila-sin-problemas.jpg" alt="Tú cobras, nosotros trabajamos" loading="lazy">
           <div class="step-num">03</div>
         </div>
         <div class="step-body">
@@ -409,9 +411,9 @@
   <div class="container">
     <h2 class="section-title text-center">Lo que dicen <span>Nuestros Propietarios</span></h2>
     <div class="testimonials-grid">
-      <div class="testimonial-card"><img src="images/10_resena-alquila-sin-problemas__1_.png" alt="Testimonio Enrique Herrero" loading="lazy"></div>
-      <div class="testimonial-card"><img src="images/10_resena-alquila-sin-problemas__2_.png" alt="Testimonio Marcos Díaz" loading="lazy"></div>
-      <div class="testimonial-card"><img src="images/10_resena-alquila-sin-problemas__3_.png" alt="Testimonio Carmen López" loading="lazy"></div>
+      <div class="testimonial-card"><img src="images/10-reseña-alquila-sin-problemas-1.png" alt="Testimonio Enrique Herrero" loading="lazy"></div>
+      <div class="testimonial-card"><img src="images/10-reseña-alquila-sin-problemas-2.png" alt="Testimonio Marcos Díaz" loading="lazy"></div>
+      <div class="testimonial-card"><img src="images/10-resena-alquila-sin-problemas-3.png" alt="Testimonio Carmen López" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -470,7 +472,6 @@
           <textarea name="COMENTARIOS" rows="2" style="width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.92rem;resize:vertical"></textarea>
         </div>
         <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:18px;display:flex;align-items:flex-start;gap:8px">
-          <span>🔒</span>
           <span>Al enviar este formulario aceptas la <a href="politica-privacidad.html" style="color:var(--teal);text-decoration:underline">Política de privacidad</a> y el tratamiento de tus datos.</span>
         </div>
         <button type="submit" class="btn-primary" style="width:100%;font-size:1rem;padding:15px">Solicitar estudio gratuito</button>
@@ -559,5 +560,3 @@
 </script>
 </body>
 </html>
-
-
