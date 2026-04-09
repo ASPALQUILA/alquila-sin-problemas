@@ -4,29 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aviso Legal | Alquila Sin Problemas</title>
-<link rel="icon" type="image/png" href="images/1-FAVICON-WEB-pequeño-logo-alquila-sin-problemas-1.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/1-FAVICON-WEB-pequeño-logo-alquila-sin-problemas-1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-  body{font-family:'Montserrat',sans-serif;}
-  .navbar{display:flex;align-items:center;justify-content:space-between;padding:10px 6%;background:white;box-shadow:0 2px 12px rgba(0,0,0,0.07);position:sticky;top:0;z-index:100;}
-  .navbar img{height:50px;width:auto;mix-blend-mode:multiply;}
-  .btn-nav{background:#1daaac;color:white;padding:11px 24px;border-radius:50px;font-weight:700;font-size:0.9rem;font-family:'Montserrat',sans-serif;text-decoration:none;}
-  .menu-toggle{display:none;}
-  .mobile-menu{display:none;}
-  footer{background:#1a1a1a;color:#ccc;text-align:center;padding:28px 6%;font-size:0.85rem;}
-  footer a{color:#aaa;}
-  footer a:hover{color:#1daaac;}
-  .footer-links{margin:8px 0 10px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
-  @media(max-width:768px){
-    .btn-nav{display:none;}
-    .menu-toggle{display:flex;align-items:center;justify-content:center;background:transparent;border:none;padding:10px;cursor:pointer;font-size:1.5rem;color:#000;}
-    .mobile-menu{position:absolute;top:100%;left:0;right:0;background:white;box-shadow:0 8px 20px rgba(0,0,0,0.1);padding:20px 6%;z-index:99;}
-    .mobile-menu.open{display:block;}
-  }
-</style>
-  <style>
+    :root { --teal: #1daaac; --teal-dark: #225053; --gray-light: #f5f5f5; --text: #2d2d2d; --text-light: #666; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; }
+    a { text-decoration: none; color: inherit; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 6%; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 100; }
+    .navbar img { height: 50px; width: auto; mix-blend-mode: multiply; }
+    .btn-nav { background: var(--teal); color: white; padding: 11px 24px; border-radius: 50px; font-weight: 700; font-size: 0.9rem; font-family: 'Montserrat', sans-serif; text-decoration: none; }
+    .menu-toggle { display: none; }
+    .mobile-menu { display: none; }
     .legal-body { background: var(--gray-light); }
     .legal-content { max-width: 860px; margin: 0 auto; padding: 60px 5%; }
     .legal-content h1 { font-size: 2rem; font-weight: 900; color: var(--teal-dark); margin-bottom: 36px; }
@@ -35,9 +26,20 @@
     .legal-content ul { padding-left: 20px; margin-bottom: 12px; }
     .legal-content ul li { font-size: 0.95rem; color: var(--text); line-height: 1.8; margin-bottom: 4px; }
     .legal-content a { color: var(--teal); }
+    footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 28px 6%; font-size: 0.85rem; }
+    footer a { color: #aaa; }
+    footer a:hover { color: var(--teal); }
+    .footer-links { margin: 8px 0 10px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      .btn-nav { display: none; }
+      .menu-toggle { display: flex; align-items: center; justify-content: center; background: transparent; border: none; padding: 10px; cursor: pointer; font-size: 1.5rem; color: #000; }
+      .mobile-menu { position: absolute; top: 100%; left: 0; right: 0; background: white; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 20px 6%; z-index: 99; }
+      .mobile-menu.open { display: block; }
+    }
   </style>
 </head>
 <body class="legal-body">
+
 <nav class="navbar" style="position:relative">
   <a href="index.html"><img src="images/2-LOGO-largo-alquila-sin-problemas-alquiler.png" alt="Alquila Sin Problemas"></a>
   <a href="index.html#formulario" class="btn-nav">Estudio gratuito</a>
@@ -89,4 +91,3 @@
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
