@@ -84,9 +84,9 @@
 
     /* HERO */
     .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 500px; background: #f7fafa; overflow: hidden; }
-    .hero-content { padding: 60px 5% 60px 8%; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
+    .hero-content { padding: 60px 5% 60px 8%; display: flex; flex-direction: column; justify-content: center; gap: 32px; }
     .hero h1 { font-size: 2.5rem; font-weight: 800; color: var(--teal-dark); line-height: 1.3; }
-    .hero h1 span { color: var(--teal); display: block; }
+    .hero h1 span { color: var(--teal); display: inline; }
     .hero-sub { font-size: 1.05rem; color: var(--text); font-weight: 500; }
     .hero-sub strong { font-weight: 800; }
     .hero-note { font-size: 0.85rem; color: var(--text-light); margin-top: -8px; }
@@ -115,7 +115,7 @@
     .text-center { text-align: center; }
     .section-title { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.3; }
     .section-title span { color: var(--teal); }
-    .section-sub { font-size: 1rem; color: var(--text-light); max-width: 660px; margin: 0 auto 44px; }
+    .section-sub { font-size: 1rem; color: var(--text-light); max-width: 660px; margin: 0 auto 60px; }
 
     /* COMPARISON */
     .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 44px; }
@@ -132,7 +132,7 @@
     .comp-list li::before { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
     .comp-card.bad .comp-list li::before { content: "✗"; color: var(--red); font-weight: 800; }
     .comp-card.good .comp-list li::before { content: "✓"; color: var(--teal); font-weight: 800; }
-    .comp-footer { margin-top: 22px; padding: 14px 18px; border-radius: 8px; font-size: 1rem; font-weight: 700; text-align: center; line-height: 1.5; }
+    .comp-footer { margin-top: 40px; padding: 14px 18px; border-radius: 8px; font-size: 1rem; font-weight: 700; text-align: center; line-height: 1.5; }
     .comp-card.bad .comp-footer { background: var(--red); color: white; }
     .comp-card.good .comp-footer { background: var(--teal-dark); color: white; }
 
@@ -165,7 +165,7 @@
     .testimonials-section .section-title { color: white; }
     .testimonials-section .section-title span { color: var(--teal); }
     .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
-    .testimonial-card { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .testimonial-card { background: transparent; border-radius: var(--radius); overflow: hidden; box-shadow: none; }
     .testimonial-card img { width: 100%; height: auto; }
 
     /* FORM SECTION */
@@ -201,7 +201,7 @@
     .final-cta-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
     .final-cta-text h2 { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 14px; line-height: 1.3; }
     .final-cta-text h2 span { color: var(--teal); }
-    .final-cta-text p { color: var(--text-light); margin-bottom: 32px; font-size: 0.95rem; line-height: 1.7; }
+    .final-cta-text p { color: var(--text-light); margin-bottom: 40px; font-size: 0.95rem; line-height: 1.7; }
     .final-cta-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
     .final-cta-img img { width: 100%; height: 320px; object-fit: cover; object-position: right center; }
 
@@ -262,7 +262,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Cobra cada mes<span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
+    <h1>Cobra cada mes — <span>Sin Impagos, Sin Riesgos y Sin Gestión</span></h1>
     <p class="hero-sub">Nos convertimos en <strong>tu único inquilino.</strong><br><strong>Tú cobras una renta fija cada mes, nosotros nos encargamos de todo.</strong></p>
     <div>
       <a href="#formulario" class="btn-primary">Solicitar estudio gratuito</a>
@@ -340,24 +340,24 @@
     <div class="ba-grid">
       <div class="ba-pair">
         <div class="ba-photos">
-          <div class="ba-photo"><img src="images/5A-bano-antes.jpg" alt="Baño antes" class="antes" loading="lazy"><span class="ba-label">Antes</span></div>
-          <div class="ba-photo"><img src="images/5C-bano-despues.jpg" alt="Baño después" loading="lazy"><span class="ba-label">Después</span></div>
+          <div class="ba-photo"><img src="images/5A-bano-antes.jpg" alt="Baño antes" class="antes" loading="lazy"></div>
+          <div class="ba-photo"><img src="images/5C-bano-despues.jpg" alt="Baño después" loading="lazy"></div>
         </div>
-        <div class="ba-room">🛁 Baño</div>
+        <div class="ba-room">Baño</div>
       </div>
       <div class="ba-pair">
         <div class="ba-photos">
-          <div class="ba-photo"><img src="images/6A-salon-antes.jpg" alt="Salón antes" class="antes" loading="lazy"><span class="ba-label">Antes</span></div>
-          <div class="ba-photo"><img src="images/6B-salon-despues.jpg" alt="Salón después" loading="lazy"><span class="ba-label">Después</span></div>
+          <div class="ba-photo"><img src="images/6A-salon-antes.jpg" alt="Salón antes" class="antes" loading="lazy"></div>
+          <div class="ba-photo"><img src="images/6B-salon-despues.jpg" alt="Salón después" loading="lazy"></div>
         </div>
-        <div class="ba-room">🛋️ Salón</div>
+        <div class="ba-room">Salón</div>
       </div>
       <div class="ba-pair">
         <div class="ba-photos">
-          <div class="ba-photo"><img src="images/7A-terraza-antes.jpg" alt="Terraza antes" class="antes" loading="lazy"><span class="ba-label">Antes</span></div>
-          <div class="ba-photo"><img src="images/7B-terraza-despues.jpg" alt="Terraza después" loading="lazy"><span class="ba-label">Después</span></div>
+          <div class="ba-photo"><img src="images/7A-terraza-antes.jpg" alt="Terraza antes" class="antes" loading="lazy"></div>
+          <div class="ba-photo"><img src="images/7B-terraza-despues.jpg" alt="Terraza después" loading="lazy"></div>
         </div>
-        <div class="ba-room">🌿 Terraza</div>
+        <div class="ba-room">Terraza</div>
       </div>
     </div>
   </div>
@@ -366,8 +366,8 @@
 <!-- STEPS -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title text-center">Así de <span>fácil</span> es cobrar cada mes,<br>sin que tengas que hacer nada</h2>
-    <p class="section-sub text-center">En <strong>solo 3 pasos</strong>, pasas de preocuparte por tu alquiler a <strong>olvidarte de todo.</strong></p>
+    <h2 class="section-title text-center">Así de <span>fácil</span> es cobrar cada mes,<br><span>sin que tengas que hacer nada</span></h2>
+    <p class="section-sub text-center" style="margin:0 auto 60px;">En <strong>solo 3 pasos</strong>, pasas de preocuparte por tu alquiler a <strong>olvidarte de todo.</strong></p>
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-img">
