@@ -5,6 +5,10 @@
     { "source": "/politica-privacidad", "destination": "/politica-privacidad.html" },
     { "source": "/politica-cookies", "destination": "/politica-cookies.html" },
     { "source": "/solicitar-estudio-gratuito", "destination": "/solicitar-estudio-gratuito.html" }
+  ],
+  "errors": [
+    { "statusCode": 404, "destination": "/404.html" },
+    { "statusCode": 500, "destination": "/500.html" }
   ]
 }
 
