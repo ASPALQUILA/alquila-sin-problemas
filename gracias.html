@@ -38,9 +38,18 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <a href="index.html"><img src="images/2-LOGO-largo-alquila-sin-problemas-alquiler.png" alt="Alquila Sin Problemas"></a>
-</nav>
+.navbar { display:flex; align-items:center; justify-content:space-between; padding:10px 6%; background:white; box-shadow:0 2px 12px rgba(0,0,0,0.07); position:sticky; top:0; z-index:100; }
+.navbar img { height:50px; width:auto; mix-blend-mode:multiply; }
+.btn-nav { background:#1daaac; color:white; padding:11px 24px; border-radius:50px; font-weight:700; font-size:0.9rem; font-family:'Montserrat',sans-serif; text-decoration:none; }
+.menu-toggle { display:none; }
+.mobile-menu { display:none; }
+@media (max-width:768px) {
+  .btn-nav { display:none; }
+  .menu-toggle { display:flex; align-items:center; justify-content:center; background:transparent; border:none; padding:10px; cursor:pointer; font-size:1.5rem; color:#000; }
+  .mobile-menu { position:absolute; top:100%; left:0; right:0; background:white; box-shadow:0 8px 20px rgba(0,0,0,0.1); padding:20px 6%; z-index:99; }
+  .mobile-menu.open { display:block; }
+  .navbar img { height:38px; }
+}
 
 <div class="thanks-wrap">
   <div class="thanks-card">
