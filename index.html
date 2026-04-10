@@ -170,6 +170,7 @@
     .faq-a { display: none; padding: 0 4px 20px; font-size: 0.92rem; color: var(--text); line-height: 1.75; }
     .faq-item.open .faq-a { display: block; }
     .faq-a strong { font-weight: 800; color: var(--teal-dark); }
+#formulario { scroll-margin-top: 80px; }
     .final-cta { background: var(--gray); overflow: hidden; }
     .final-cta-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; }
     .final-cta-text h2 { font-size: 1.9rem; font-weight: 800; color: var(--teal-dark); margin-bottom: 30px; line-height: 1.4; }
@@ -554,7 +555,7 @@
   var btnTop = document.getElementById('btn-top');
   window.addEventListener('scroll', function() {
     btnTop.style.display = window.scrollY > 300 ? 'flex' : 'none';
-  });
+  }, { passive: true });
 </script>
 </body>
 </html>
